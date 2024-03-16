@@ -2,6 +2,7 @@ import { useSnapshot } from "valtio";
 import { state } from "../data/data";
 import Gallery from "../components/Gallery";
 import PageHeading from "../components/PageWrapper";
+import {SuccessAlert} from "../components/Toast"
 
 const Favorites = () => {
   const snap = useSnapshot(state);
@@ -10,6 +11,7 @@ const Favorites = () => {
 
   const removeFromFavorite = (id) => {
     state.favorites = favorites.filter((f) => f.id !== id);
+      SuccessAlert("Removed from favorites")
   };
 
   return (

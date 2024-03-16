@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { useSnapshot } from "valtio";
 import { state } from "../data/data";
+import {SuccessAlert} fronm "../components/Toast"
 import Gallery from "../components/Gallery";
 import PageHeading from "../components/PageWrapper";
 
@@ -11,6 +12,7 @@ const Search = () => {
 
   const addToFavoriteHandler = (image) => {
     state.favorites.push(image);
+    SuccessAlert("Added to Favorites")
   };
 
   return (

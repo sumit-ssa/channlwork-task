@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative flex w-full items-center justify-between py-2 shadow-sm bg-gray-700  ">
-      <div className="flex w-full flex-wrap items-center justify-between px-10 max-w-[1600px] mx-auto">
+      <div className="flex w-full flex-wrap items-center justify-between px-4 max-w-[1600px] mx-auto">
         <Link to={""} className="w-16">
           <img src={logo} className="w-full cursor-pointer" />
         </Link>

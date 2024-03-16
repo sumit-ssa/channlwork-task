@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { useSnapshot } from "valtio";
 import { state } from "../data/data";
-import {SuccessAlert} fronm "../components/Toast"
+import {SuccessAlert} from "../components/Toast"
 import Gallery from "../components/Gallery";
 import PageHeading from "../components/PageWrapper";
 
